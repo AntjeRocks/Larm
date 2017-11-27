@@ -2,8 +2,11 @@ import time
 import os
 from smtplib import SMTP
 
+
 def larm(description, value, soft_limit, hard_limit):
-    if value > hard_limit:
+    if value < hard_limit:
+        print("Everything is fine   :)")
+    elif value > hard_limit:
         error(description, str(value))
     elif value > soft_limit:
         warn(description, str(value))

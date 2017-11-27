@@ -46,11 +46,11 @@ def memory_usage():
 def print_disk_info():
     print("Disk Usage Threshold:")
     print("Softlimit Disk Usage: ", soft_disk_usage)
-    print("Hardlimit Disk Usage: ", hard_disk_usage)
+    print("Hardlimit Disk Usage: ", hard_disk_usage, "\n")
 
 def print_memory_info():
     print("Memory Usage Threshold:")
     print("Softlimit Memory Usage: ", soft_memory_usage)
-    print("Hardlimit Memory Usage: ", hard_memory_usage)
+    print("Hardlimit Memory Usage: ", hard_memory_usage, "\n")
 
 parse_options()
