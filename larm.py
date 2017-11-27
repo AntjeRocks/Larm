@@ -5,7 +5,7 @@ from smtplib import SMTP
 
 def larm(description, value, soft_limit, hard_limit):
     if value < hard_limit:
-        print("Everything is fine   :)")
+        print("Everything is fine   :) \n")
     elif value > hard_limit:
         error(description, str(value))
     elif value > soft_limit:
