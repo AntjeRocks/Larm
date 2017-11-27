@@ -21,10 +21,11 @@ def parse_options():
             memory_usage()
         else:
             print("Invalid option: " + sys.argv[2])
+            print("Allowed types are: disk, mem")
             exit(1)
         exit(0)
     print("Usage: " + sys.argv[0] + " (-o <type>)")
-    print("Where type is: disk, memory")
+    print("Where type is: disk, mem")
     exit(1)
 
 def disk_usage():
