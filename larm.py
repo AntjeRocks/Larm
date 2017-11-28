@@ -13,13 +13,13 @@ def larm(description, value, soft_limit, hard_limit):
 
 def error(description, value):
     log = log_line("Error  ", description, value)
-    print(log)
+    print(log + "\n")
     add_log_entry(log + "\n")
     send_mail(log)
 
 def warn(description, value):
     log = log_line("Warning", description, value)
-    print(log)
+    print(log + "\n")
     add_log_entry(log + "\n")
 
 def log_line(type, description, value):
